@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Drupal Form API example module.
+ */
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function  drupalform_form_system_site_information_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  $form['site_phone'] = array(
+    '#type' => 'tel',
+    '#title' => t('Site phone'),
+    '#default_value' => Drupal::config('system.site')->get('phone'),
+  );
+  $form['#submit'][] = 'drupalform_system_site_information_phone_submit';
+}
+
+/**
+ * Form callback to save site_phone
+ * @param array $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ */
+function drupalform_system_site_information_phone_submit(array &$form,  \Drupal\Core\Form\FormStateInterface $form_state) {
+  $config = Drupal::configFactory()->getEditable('system.site');
+  $config
+  ->set('phone', $form_state->getValue('site_phone'))
+  ->save();
+}

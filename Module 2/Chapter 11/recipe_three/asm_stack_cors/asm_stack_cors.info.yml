@@ -1,0 +1,4 @@
+name: Stack/Cors
+type: module
+description: Adds CORS support to Drupal via the asm89/stack-cors library
+core: 8.x

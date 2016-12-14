@@ -1,0 +1,4 @@
+name: My module
+description: Custom module that uses a form alter
+type: module
+core: 8.x

@@ -1,0 +1,15 @@
+parameters:
+  cors:
+    enabled: true
+    allowedHeaders: []
+    allowedMethods: ['GET']
+    allowedOrigins: ['*']
+    exposedHeaders: []
+    maxAge: false
+    supportsCredentials: false
+services:
+  asm_stack_cors.cors:
+    class: Asm89\Stack\Cors
+    arguments: ['%cors%']
+    tags:
+      - { name: http_middleware }

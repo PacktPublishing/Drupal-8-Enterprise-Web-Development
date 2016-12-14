@@ -1,0 +1,11 @@
+{
+  "name": "drupal/asm89/stack-cors",
+  "type": "drupal-module",
+  "description": "Implements stack middleware Stack/Cors",
+  "homepage": "https://www.drupal.org/sandbox/mglaman/2643470",
+  "license": "GPL-2.0+",
+  "require": {
+    "asm89/stack-cors": "^0.2.1"
+  },
+  "minimum-stability": "dev"
+}

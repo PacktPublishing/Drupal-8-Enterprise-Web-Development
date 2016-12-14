@@ -1,0 +1,28 @@
+entity.message.add_form:
+  path: '/messages/add'
+  defaults:
+    _entity_form: 'message.add'
+    _title: 'Add message'
+  requirements:
+    _entity_create_access: 'message'
+entity.message.collection:
+  path: '/admin/content/messages'
+  defaults:
+    _entity_list: 'message'
+    _title: 'Messages'
+  requirements:
+    _permission: 'administer messages'
+entity.message_type.add_form:
+  path: '/admin/structure/message-types/add'
+  defaults:
+    _entity_form: 'message_type.add'
+    _title: 'Add message type'
+  requirements:
+    _entity_create_access: 'message_type'
+entity.message_type.collection:
+  path: '/admin/structure/message-types'
+  defaults:
+    _entity_list: 'message_type'
+    _title: 'Message types'
+  requirements:
+    _permission: 'administer message types'

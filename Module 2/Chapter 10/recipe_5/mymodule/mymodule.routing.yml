@@ -1,0 +1,14 @@
+entity.message.add_form:
+  path: '/messages/add'
+  defaults:
+    _entity_form: 'message.add'
+    _title: 'Add message'
+  requirements:
+    _entity_create_access: 'message'
+entity.message.collection:
+  path: '/admin/content/messages'
+  defaults:
+    _entity_list: 'message'
+    _title: 'Messages'
+  requirements:
+    _permission: 'administer messages'

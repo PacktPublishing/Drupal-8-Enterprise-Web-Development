@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Contains console_commands.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function console_commands_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the console_commands module.
+    case 'help.page.console_commands':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+

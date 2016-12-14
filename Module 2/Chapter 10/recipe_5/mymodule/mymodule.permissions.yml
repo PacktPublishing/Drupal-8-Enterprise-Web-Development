@@ -1,0 +1,6 @@
+administer messages:
+  title: 'Administer messages'
+  restrict access: true
+
+permission_callbacks:
+  - \Drupal\mymodule\MessagePermissions::messageTypePermissions

@@ -1,0 +1,20 @@
+centimeters:
+  label: Centimeters
+  unit: cm
+  factor: 1E-2
+  type: dimensions
+meters:
+  label: Meters
+  unit: m
+  factor: 1
+  type: dimensions
+feet:
+  label: Feet
+  unit: ft
+  factor: 3.048E-1
+  type: dimensions
+inches:
+  label: Inches
+  unit: in
+  factor: 2.54E-2
+  type: dimensions

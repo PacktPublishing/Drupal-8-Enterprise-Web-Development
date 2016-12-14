@@ -1,0 +1,4 @@
+name: My Module!
+type: module
+description: This is an example module from the Drupal 8 Cookbook!
+core: 8.x
