@@ -1,0 +1,18 @@
+<section id="comments" class="post-block post-comments">
+
+	{% if comments and not label_hidden %}
+		{{ title_prefix }}
+		<h3{{ title_attributes }}><i class="fa fa-comments"></i>{{ label }}</h3>
+		{{ title_suffix }}
+	{% endif %}
+
+	{{ comments }}
+
+	{% if comment_form %}
+		<div class="post-block post-leave-comment">
+			<h3{{ content_attributes }}>{{ 'Leave a comment'|t }}</h3>
+			{{ comment_form }}
+		</div>
+	{% endif %}
+
+</section>

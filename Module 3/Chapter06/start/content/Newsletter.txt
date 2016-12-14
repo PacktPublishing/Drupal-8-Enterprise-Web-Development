@@ -1,0 +1,10 @@
+<p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+
+<form id="newsletterForm" action="" method="POST" novalidate="novalidate">
+    <div class="input-group">
+        <input class="form-control" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="text">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">Go!</button>
+        </span>
+    </div>
+</form>

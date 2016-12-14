@@ -1,0 +1,14 @@
+{% set classes = [ 'block','contact-intro' ] %}
+
+<div{{ attributes.addClass(classes) }}>
+	<div class="container">
+		{{ title_prefix }}
+		{% if label %}
+			<h4{{ title_attributes }}>{{ label }}</h4>
+		{% endif %}
+		{{ title_suffix }}
+		{% block content %}
+			{{ content }}
+		{% endblock %}
+	</div>
+</div>

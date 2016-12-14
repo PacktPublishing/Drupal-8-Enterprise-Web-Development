@@ -1,0 +1,41 @@
+.messages {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.messages + .messages {
+    margin-top: 1.538em;
+}
+
+.messages__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.messages__item + .messages__item {
+    margin-top: 0.769em;
+}
+
+.messages--status {
+    color: #fff;
+    background-color: #41B312;
+    border-color: #295B00;
+}
+
+.messages--warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.messages--error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.messages--error p.error {
+    color: #a51b00;
+}

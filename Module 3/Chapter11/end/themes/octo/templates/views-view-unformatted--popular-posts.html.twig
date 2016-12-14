@@ -1,0 +1,16 @@
+{% if title %}
+	<h3>{{ title }}</h3>
+{% endif %}
+
+<ul class="simple-post-list">
+	{% for row in rows %}
+		{%
+		set row_classes = [
+		default_row_class ? 'views-row',
+		]
+		%}
+		<li{{ row.attributes.addClass(row_classes) }}>
+			{{ row.content }}
+		</li>
+	{% endfor %}
+</ul>

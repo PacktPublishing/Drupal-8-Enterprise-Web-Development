@@ -1,0 +1,20 @@
+<?php
+
+function tweet_preprocess_block(&$variables){
+
+  // recommended method - uncomment below to see friendly version of variables printed
+  // kint($variables);
+
+  // old method of printing variables - uncomment below to print variables array
+  // dpm($variables);
+
+  // Add layout class to Featured Blocks
+  $featured = array('block-tweet-customblockone','block-tweet-customblocktwo','block-tweet-customblockthree');
+  $id = $variables['attributes']['id'];
+
+  // If block id matches list - add class
+  if(in_array($id, $featured)){
+    $variables['attributes']['class'][] = 'col-md-4';
+  }
+
+}

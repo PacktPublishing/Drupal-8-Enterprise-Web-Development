@@ -1,0 +1,6 @@
+<ul class="social-icons">
+  <li><a class="button--icon" target="_blank" href="https://www.facebook.com/PacktPub" title=""><i class="fa fa-facebook"></i></a></li>
+  <li><a class="button--icon" target="_blank" href="https://www.linkedin.com/company/packt-publishing" title=""><i class="fa fa-linkedin"></i></a></li>
+  <li><a class="button--icon" target="_blank" href="https://twitter.com/packtpub" title=""><i class="fa fa-twitter"></i></a></li>
+  <li><a class="button--icon" target="_blank" href="https://plus.google.com/+packtpublishing/posts" title=""><i class="fa fa-google-plus"></i></a></li>
+</ul>

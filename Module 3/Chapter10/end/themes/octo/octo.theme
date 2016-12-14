@@ -1,0 +1,22 @@
+<?php
+
+function octo_preprocess_node(&$variables) {
+  $node = $variables ['elements']['#node'];
+  $id = $node->id();
+
+  // Create comment count variable for template
+  $count = _octo_comment_count($id);
+  $variables['comment_count'] = _octo_plural($count, 'Comment', 'Comments');
+}
+
+function _octo_comment_count($id) {
+  $count = db_query("SELECT comment_count FROM   comment_entity_statistics WHERE entity_id = :id", array(':id' => $id))->fetchField();
+  return empty($count) ? '0' : $count;
+}
+
+function _octo_plural($count, $singular, $plural) {
+  if ( $count == 1 )
+    return $count . ' ' . $singular;
+  else
+    return $count . ' ' . $plural;
+}

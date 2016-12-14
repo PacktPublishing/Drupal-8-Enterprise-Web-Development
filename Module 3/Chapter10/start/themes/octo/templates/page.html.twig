@@ -1,0 +1,99 @@
+<header class="header" role="banner">
+	<div class="header-top">
+		<div class="container">
+			{{ page.header_top }}
+		</div>
+	</div>
+
+	<div class="header-nav container">
+		{{ page.header}}
+		{{ page.primary_menu }}
+	</div>
+</header>
+
+{% block content %}
+<main role="main" class="main">
+	<div class="layout-content">
+
+		{{ page.title_bar }}
+		{{ page.highlighted }}
+		{{ page.before_content }}
+
+		<div id="content" class="content full">
+			<div class="container">
+				<div class="row">
+
+					{% if page.sidebar_first %}
+						<aside class="layout-sidebar-first" role="complementary">
+							<div class="col-md-3">
+								{{ page.sidebar_first }}
+							</div>
+						</aside>
+					{% endif %}
+
+					{% if page.sidebar_second and page.sidebar_first %}
+						{% set col_class = 'col-md-6' %}
+					{% elseif page.sidebar_second or page.sidebar_first %}
+						{% set col_class = 'col-md-9' %}
+					{% else %}
+						{% set col_class = 'col-md-12' %}
+					{% endif %}
+
+					<div class="{{ col_class }}">
+						{{ page.content }}
+					</div>
+
+					{% if page.sidebar_second %}
+						<aside class="layout-sidebar-second" role="complementary">
+							<div class="col-md-3">
+								{{ page.sidebar_second }}
+							</div>
+						</aside>
+					{% endif %}
+
+				</div>
+			</div>
+		</div>
+
+		{{ page.after_content }}
+
+	</div>
+</main>
+{% endblock %}
+
+<footer id="footer" role="contentinfo">
+
+	<div class="container main-footer">
+		<div class="row">
+			<div class="col-md-4">
+				{{ page.footer_first }}
+			</div>
+
+			<div class="col-md-4">
+				{{ page.footer_second }}
+			</div>
+
+			<div class="col-md-4">
+				{{ page.footer_third }}
+			</div>
+
+		</div>
+	</div>
+
+	<div class="footer-copyright">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-8">
+					{{ page.footer_bottom_left }}
+				</div>
+
+				<div class="col-md-4">
+					{{ page.footer_bottom_right }}
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</footer>

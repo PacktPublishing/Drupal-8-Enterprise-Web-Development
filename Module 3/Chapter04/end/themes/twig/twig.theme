@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function twig_preprocess_html(&$variables) {
+    // add to classes
+    $variables['attributes']['class'][] = 'twig';
+}

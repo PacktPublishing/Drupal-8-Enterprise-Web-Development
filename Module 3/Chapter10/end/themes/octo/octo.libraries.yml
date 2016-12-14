@@ -1,0 +1,80 @@
+bootstrap:
+  version: 3.3.6
+  css:
+    theme:
+      vendor/bootstrap/css/bootstrap.min.css: {}
+      vendor/bootstrap/css/bootstrap-theme.min.css: {}
+  js:
+    vendor/bootstrap/js/bootstrap.min.js: {}
+  dependencies:
+    - core/jquery
+
+base:
+  version: VERSION
+  css:
+    theme:
+      css/styles.css: {}
+  js:
+    js/octo.js: {}
+  dependencies:
+    - core/jquery
+
+webfonts:
+  version: VERSION
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto+Slab: { type: external }
+
+font-awesome:
+  version: 4.3.0
+  css:
+    theme:
+      vendor/font-awesome/css/font-awesome.min.css: {}
+
+flexslider:
+  version: 2.5.0
+  css:
+    theme:
+      vendor/flexslider/flexslider.css: {}
+  js:
+    vendor/flexslider/jquery.flexslider-min.js: {}
+  dependencies:
+    - core/jquery
+
+scroll-to:
+  version: 2.1.1
+  js:
+    vendor/jquery-scrollTo/jquery.scrollTo.min.js: {}
+  dependencies:
+    - core/jquery
+
+owl-carousel:
+  version: 1.3.3
+  css:
+      theme:
+        vendor/owl-carousel/owl.carousel.css: {}
+        vendor/owl-carousel/owl.theme.css: {}
+  js:
+    vendor/owl-carousel/owl.carousel.min.js: {}
+  dependencies:
+    - core/jquery
+
+add-this:
+  version: VERSION
+  js:
+    //s7.addthis.com/js/300/addthis_widget.js#pubid=chazchumley: { type: external, asynch: asynch }
+
+map:
+  version: VERSION
+  js:
+    js/map.js: {}
+  dependencies:
+    - octo/jquery-gmap
+
+jquery-gmap:
+  version: 2.1.5
+  js:
+    vendor/jquery-gmap/jquery.gmap.min.js: {}
+    //maps.google.com/maps/api/js?sensor=true: { type: external }
+  dependencies:
+    - core/jquery

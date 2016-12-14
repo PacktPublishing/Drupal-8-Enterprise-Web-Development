@@ -1,0 +1,36 @@
+<div class="tabs">
+
+	<ul class="nav nav-tabs">
+		<li class="active">
+			<a href="#popularPosts" data-toggle="tab">
+				<i class="fa fa-star"></i> {{ 'Popular'|t }}
+			</a>
+		</li>
+		<li>
+			<a href="#recentPosts" data-toggle="tab">
+				{{ 'Recent'|t }}
+			</a>
+		</li>
+	</ul>
+
+	<div class="tab-content">
+
+		{% if rows %}
+			<div class="tab-pane active" id="popularPosts">
+				{{ rows }}
+			</div>
+		{% elseif empty %}
+			<div class="view-empty">
+				{{ empty }}
+			</div>
+		{% endif %}
+
+		{% if footer %}
+			<div class="tab-pane" id="recentPosts">
+				{{ footer }}
+			</div>
+		{% endif %}
+
+	</div>
+
+</div>

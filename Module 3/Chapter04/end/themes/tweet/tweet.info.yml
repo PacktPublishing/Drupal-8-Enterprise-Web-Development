@@ -1,0 +1,23 @@
+name: Tweet
+type: theme
+description: 'A Twitter Bootstrap starter theme'
+core: 8.x
+base theme: false
+
+libraries:
+  - tweet/bootstrap
+
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right second'
+  footer: Footer
+  jumbotron: Jumbotron
+  featured: Featured

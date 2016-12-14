@@ -1,0 +1,15 @@
+{% if items|length > 1 %}
+	<div class="post-image">
+		<div class="owl-carousel">
+			{% for item in items %}
+				<div class="img-thumbnail">{{ item.content }}</div>
+			{% endfor %}
+		</div>
+	</div>
+{% else %}
+	<div class="single-post-image post-image">
+		{% for item in items %}
+			<div class="img-thumbnail">{{ item.content }}</div>
+		{% endfor %}
+	</div>
+{% endif %}

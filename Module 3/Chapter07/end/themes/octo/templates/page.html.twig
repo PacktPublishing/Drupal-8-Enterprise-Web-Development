@@ -1,0 +1,66 @@
+<header class="header" role="banner">
+	<div class="header-top">
+		<div class="container">
+			{{ page.header_top }}
+		</div>
+	</div>
+
+	<div class="header-nav container">
+		{{ page.header}}
+		{{ page.primary_menu }}
+	</div>
+</header>
+
+<main role="main" class="main">
+	<div class="layout-content">
+		{{ page.title_bar }}
+		{{ page.before_content }}
+		<div id="content" class="content full">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						{{ page.content }}
+					</div>
+				</div>
+			</div>
+		</div>
+		{{ page.after_content }}
+	</div>
+</main>
+
+<footer id="footer" role="contentinfo">
+
+	<div class="container main-footer">
+		<div class="row">
+			<div class="col-md-4">
+				{{ page.footer_first }}
+			</div>
+
+			<div class="col-md-4">
+				{{ page.footer_second }}
+			</div>
+
+			<div class="col-md-4">
+				{{ page.footer_third }}
+			</div>
+
+		</div>
+	</div>
+
+	<div class="footer-copyright">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-8">
+					{{ page.footer_bottom_left }}
+				</div>
+
+				<div class="col-md-4">
+					{{ page.footer_bottom_right }}
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</footer>

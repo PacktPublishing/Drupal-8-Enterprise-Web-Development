@@ -1,0 +1,27 @@
+<article{{ attributes }}>
+
+    <div class="comment">
+        {{ user_picture }}
+
+        <div class="comment-block">
+            <div class="comment-arrow"></div>
+            <div class="comment-by">
+                <strong><span>{{ author }}</span></strong>
+                <span class="pull-right">
+                    {{ content.links }}
+                </span>
+            </div>
+            <div class="comment-content">
+                {{ content.comment_body }}
+            </div>
+            <div class="comment-date">
+                <span class="date pull-right">{{ created }}</span>
+            </div>
+        </div>
+    </div>
+
+    {% if parent %}
+        <p class="visually-hidden">{{ parent }}</p>
+    {% endif %}
+
+</article>

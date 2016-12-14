@@ -1,0 +1,26 @@
+<div class="container">
+	{% for type, messages in message_list %}
+
+      {% if type == 'error' %}
+        {% set classes = ['alert', 'alert-danger', 'alert--' ~ type] %}
+      {% else %}
+	      {% set classes = ['alert', 'alert-success', 'alert--' ~ type] %}
+      {% endif %}
+
+			<div {{ attributes.addClass(classes) }} role="alert">
+        {% if messages|length > 1 %}
+          <ul>
+            {% for message in messages %}
+              <li>{{ message }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          {{ messages|first }}
+        {% endif %}
+      </div>
+
+			{# Remove type specific classes #}
+			{{ attributes.removeClass(classes) }}
+
+	{% endfor %}
+</div>

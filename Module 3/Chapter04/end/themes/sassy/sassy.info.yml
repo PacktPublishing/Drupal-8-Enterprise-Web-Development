@@ -1,0 +1,8 @@
+name: Sassy
+type: theme
+description: 'A Classy sub theme but a little more Sassy'
+core: 8.x
+base theme: classy
+
+libraries-override:
+  classy/messages: sassy/messages

@@ -1,0 +1,25 @@
+{% extends 'themes/octo/templates/page.html.twig' %}
+{% block content %}
+{{ attach_library('octo/flexslider') }}
+{{ attach_library('octo/scroll-to') }}
+
+	<section class="intro" id="section1" data-speed="5" data-type="background" style="background-position: 50% 0px;">
+		<div class="overlay">
+	    <div class="headline">
+				{{ page.headline }}
+	    </div>
+		</div>
+	  <a href="#" id="goto-section2" class="arrow-down">Get started</a>
+	</section>
+
+	<main role="main" class="main">
+		<div class="layout-content">
+      <section id="section2" class="section">
+        <div class="container">
+	        {{ page.before_content }}
+        </div>
+      </section>
+		</div>
+	</main>
+
+{% endblock %}

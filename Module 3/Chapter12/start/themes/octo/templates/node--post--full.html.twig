@@ -1,0 +1,49 @@
+{{ attach_library('octo/owl-carousel') }}
+{{ attach_library('octo/add-this') }}
+
+{% set classes = ['post', 'post--listing'] %}
+
+<article{{ attributes.addClass(classes) }}>
+	{{ content.field_image }}
+
+	<div class="post-date">
+		<span class="day">{{ node.createdtime|date('d') }}</span>
+		<span class="month">{{ node.createdtime|date('M') }}</span>
+	</div>
+
+	<div class="post-content">
+
+		{{ title_prefix }}
+		<h2{{ title_attributes }}>
+			<a href="{{ url }}" rel="bookmark">{{ label }}</a>
+		</h2>
+		{{ title_suffix }}
+
+		<div class="post-meta">
+
+			<span class="post-meta-user">
+				<i class="fa fa-user"></i> By {{ author_name }}
+			</span>
+
+			<span class="post-meta-tag">
+				<i class="fa fa-tag"></i> {{ content.field_tags }}
+			</span>
+
+			<span class="post-meta-comments">
+        <i class="fa fa-comments"></i>
+        <a href="{{ url }}/#comments">{{ comment_count }}</a>
+      </span>
+
+		</div>
+
+		{{ content.field_full_content }}
+
+		<div class="post-share">
+			<h3><i class="fa fa-share"></i> Share this post</h3>
+			<div class="addthis_native_toolbox"></div>
+		</div>
+
+	</div>
+
+	{{ content|without('field_image','field_teaser', 'field_tags', 'field_full_content') }}
+</article>

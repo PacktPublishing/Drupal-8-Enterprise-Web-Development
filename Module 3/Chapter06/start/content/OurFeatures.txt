@@ -1,0 +1,55 @@
+<div class="row">
+
+  <div class="col-sm-4">
+    <div class="service">
+      <div class="service-icon"><i class="fa fa-file-code-o"></i></div>
+      <h4>Twig Templates</h4>
+      <p>Donec consectetur metus eget felis commodo, ut iaculis mi dignissim. Maecenas in suscipit libero, in dictum metus</p>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="service">
+      <div class="service-icon"><i class="fa fa-server"></i></div>
+      <h4>Custom Block Layouts</h4>
+      <p>Donec consectetur metus eget felis commodo, ut iaculis mi dignissim. Maecenas in suscipit libero, in dictum metus</p>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="service">
+      <div class="service-icon"><i class="fa fa-mobile"></i></div>
+      <h4>Fully responsive</h4>
+      <p>Donec consectetur metus eget felis commodo, ut iaculis mi dignissim. Maecenas in suscipit libero, in dictum metus</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-4">
+    <div class="service">
+      <div class="service-icon"><i class="fa fa-html5"></i></div>
+      <h4>Clean modern design</h4>
+      <p>Donec consectetur metus eget felis commodo, ut iaculis mi dignissim. Maecenas in suscipit libero, in dictum metus</p>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="service">
+      <div class="service-icon"><i class="fa fa-drupal"></i></div>
+      <h4>Views in Core</h4>
+      <p>Donec consectetur metus eget felis commodo, ut iaculis mi dignissim. Maecenas in suscipit libero, in dictum metus</p>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="service">
+      <div class="service-icon"><i class="fa fa-cogs"></i></div>
+      <h4>Wysiwyg options</h4>
+      <p>Donec consectetur metus eget felis commodo, ut iaculis mi dignissim. Maecenas in suscipit libero, in dictum metus</p>
+    </div>
+  </div>
+
+</div>

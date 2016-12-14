@@ -1,0 +1,72 @@
+{{ attach_library('octo/flexslider') }}
+{{ attach_library('octo/scroll-to') }}
+
+
+    <header class="header" role="banner">
+      <div class="header-top">
+        <div class="container">
+          {{ page.header_top }}
+        </div>
+      </div>
+
+      <div class="header-nav container">
+        {{ page.header}}
+	      {{ page.primary_menu }}
+      </div>
+    </header>
+
+    <section class="intro" id="section1" data-speed="5" data-type="background" style="background-position: 50% 0px;">
+        <div class="overlay">
+            <div class="headline">
+							{{ page.headline }}
+            </div>
+        </div>
+        <a href="#" id="goto-section2" class="arrow-down">Get started</a>
+    </section>
+
+    <main role="main" class="main">
+	    <div class="layout-content">
+        <section id="section2" class="section">
+          <div class="container">
+	          {{ page.before_content }}
+          </div>
+				</section>
+	    </div>
+    </main>
+
+    <footer id="footer" role="contentinfo">
+
+	    <div class="container main-footer">
+        <div class="row">
+          <div class="col-md-4">
+            {{ page.footer_first }}
+          </div>
+
+          <div class="col-md-4">
+            {{ page.footer_second }}
+          </div>
+
+          <div class="col-md-4">
+            {{ page.footer_third }}
+          </div>
+
+        </div>
+	    </div>
+
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+
+	          <div class="col-md-8">
+	              {{ page.footer_bottom_left }}
+	          </div>
+
+            <div class="col-md-4">
+                {{ page.footer_bottom_right }}
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </footer>
