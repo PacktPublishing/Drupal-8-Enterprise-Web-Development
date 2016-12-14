@@ -1,0 +1,28 @@
+Drupal consulting
+=================
+Summary: The iKOS Professional Services team consults, developers and teaches best practice for Drupal 6, Drupal 7, and Drupal 8 as well as other website processes.
+
+Body: Our knowledge is distilled from real-world expertise, acquired building hundreds of large and small-scale Drupal websites. You can hire i-KOS experts for workshops and clinics to suit your requirements.
+
+Drupal development
+==================
+Summary: We have a long-standing allegiance to Drupal, an Open Source content management platform, powering millions of websites and applications - including some of the world’s largest.
+
+Body: The popularity of Drupal is spreading every day www.drupal.org(link is external).
+However skilled and experienced we might be as individuals, software built, peer-reviewed, and maintained by a community of close to 1 million members1 has got to be a better bet.
+
+Supporting your websites
+========================
+Summary: Introducing the SWAMP team - your expert Drupal support resource
+Many agencies are only geared up to build new websites, often grimacing at supporting older sites.
+
+Body: At i-KOS we have the SWAMP team (Small Works and Minor Projects) who simply love keeping established sites on track, be that hot-fixing issues, supporting administrators or adding new modules, campaign pages or extra features. You can choose from three support packages designed to cater for a whole host of live production websites.
+
+Drupal training courses
+=======================
+Summary: iKOS's Drupal training courses are designed to cover the core skills and best practices for the whole Drupal web development life-cycle.
+
+Body: We teach Drupal 6, Drupal 7, and Drupal 8
+Recognised as UK's leading Drupal training agency and also an Acquia Authorised Training Partner, our training material is distilled from real-world experience, acquired over the years, during which we have built many of the UK’s largest Drupal 6, Drupal 7, and Drupal 8 sites.
+
+
